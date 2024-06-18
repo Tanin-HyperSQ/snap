@@ -17,7 +17,7 @@ class VideoPreview: UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        previewLayer.connection?.videoRotationAngle = UIDevice.current.videoRotationAngle
+//        previewLayer.connection?.videoRotationAngle = UIDevice.current.videoRotationAngle
         
         // "Scale to fill" (square video preview layer by longest edge and center; overflow gets clipped)
         if bounds.width > bounds.height {

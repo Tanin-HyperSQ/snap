@@ -34,7 +34,7 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate {
             return
         }
         isCapturing = true
-        photoOutput.connection(with: .video)?.videoRotationAngle = UIDevice.current.videoRotationAngle
+//        photoOutput.connection(with: .video)?.videoRotationAngle = UIDevice.current.videoRotationAngle
         DispatchQueue.camera.async {
             self.photoOutput.capturePhoto(with: .camera, delegate: self)
         }
