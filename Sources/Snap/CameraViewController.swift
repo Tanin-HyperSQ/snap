@@ -2,6 +2,8 @@
 import UIKit
 import AVFoundation
 
+// the actual host of the camera with permission requests etc.
+
 protocol CameraViewDelegate {
     func cameraToggledCapture(isCapturing: Bool)
     func cameraCapturedImage(_ image: Camera.Image)

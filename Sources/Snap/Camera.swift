@@ -2,6 +2,7 @@
 import SwiftUI
 import AVFoundation
 
+// the top view, includes the CameraView which is the actual camera
 public struct Camera: View {
     public typealias Quality = AVCapturePhotoOutput.QualityPrioritization
     public typealias FlashMode = AVCaptureDevice.FlashMode

@@ -2,6 +2,7 @@
 import SwiftUI
 import AVFoundation
 
+// just a bridge to CameraVC
 struct CameraView: UIViewControllerRepresentable {
     init(isCapturing: Binding<Bool>, error: Binding<Error?>, handler: @escaping Camera.Handler) {
         self.handler = handler
